@@ -1,0 +1,36 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros 
+        .row.mb-5 
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis justo lacus, aliquet quis elit malesuada, consequat sodales risus. Suspendisse sagittis quam et pretium accumsan. Nulla ut enim id tortor semper posuere. Pellentesque faucibus tristique tempor. Cras euismod ligula a commodo accumsan. Ut faucibus ultrices posuere. Nam lacinia vulputate tincidunt. Mauris urna quam, malesuada id auctor ut.
+                p Maecenas efficitur, leo sit amet sollicitudin lobortis, metus ipsum lobortis metus, vel rhoncus purus turpis at lorem. Vestibulum suscipit varius augue, sit amet placerat tellus luctus at. Integer erat orci.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 10% de Descuento
+                            p.titulo Viaje a Canadá
+                            p.fecha 20 de Octubre de 2024 - 28 de Octubre de 2024
+                            p.precio $2,500 USD
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+        .row
+            .col-md-12
+                include ./layout/bloque_testimoniales
+            
+        
